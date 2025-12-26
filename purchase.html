@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys-Products</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Karla:wght@200;300;400;500&family=Montserrat+Alternates:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9d9796826b.js" crossorigin="anonymous"></script>
+
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar fixed-top bg-light">
+        <div class="container-fluid">
+            <a href="./index.html" class="navbar-brand"><i class="fa-solid fa-gift" style="margin-right: 6%;"></i>Genuine</a>
+            <a href="./purchase.html" class="navbar-brand">Toys Mart</a>
+            <a href="#shopping-cart" style="color: mediumblue;"><i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl"></i></a>
+        </div>
+    </nav>
+
+    <!-- Product Cards -->
+    <section id="product-cards">
+        <div class="container-fluid">
+            <div class="row row-cols-2 row-cols-md-4 g-4">
+                <!-- Product Cards Go Here -->
+                <!-- Example Product Card -->
+                <div class="col filter-item all new">
+                    <div class="card h-100">
+                        <img src="./images/toy_1.png" class="card-img-top shop-item-image" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title shop-item-title">Eco Panda Magic Car</h5>
+                            <p class="card-text shop-item-price">Rs 699.00</p>
+                            <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button">
+                                <i class="fa-solid fa-cart-shopping" style="margin-right: 4%;"></i>Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col filter-item all new">
+                  <div class="card h-100">
+                    <img src="./images/toy_2.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title shop-item-title">Spiderman Scooter Giant</h5>
+                      <p class="card-text shop-item-price"> Rs 579.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all new">
+                  <div class="card h-100">
+                    <img src="./images/toy_3.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Batman Three Wheeler </h5>
+                      <p class="card-text shop-item-price"> Rs 579.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all new">
+                  <div class="card h-100">
+                    <img src="./images/toy_4.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">vigeta One Handed cart
+                        </h5>
+                      <p class="card-text shop-item-price"> Rs 599.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all office-wear ">
+                  <div class="card h-100">
+                    <img src="./images/toy_5.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Barby Toy House</h5>
+                      <p class="card-text shop-item-price"> Rs 599.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all office-wear">
+                  <div class="card h-100">
+                    <img src="./images/toy_6.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Tiny Home Kitchen Kit</h5>
+                      <p class="card-text shop-item-price">Rs 329.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class=" col filter-item all office-wear">
+                  <div class="card h-100">
+                    <img src="./images/toy_7.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">He-Man Sward</h5>
+                      <p class="card-text shop-item-price">Rs 329.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all office-wear">
+                  <div class="card h-100">
+                    <img src="./images/toy_8.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Oil Truck</h5>
+                      <p class="card-text shop-item-price">Rs 369.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all t-shirts">
+                  <div class="card h-100">
+                    <img src="./images/toy_9.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Speaking Puppy Dog</h5>
+                      <p class="card-text shop-item-price">Rs 345.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all t-shirts">
+                  <div class="card h-100">
+                    <img src="./images/toy_10.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Frog Fight Ring</h5>
+                      <p class="card-text shop-item-price">Rs 250.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all t-shirts">
+                  <div class="card h-100">
+                    <img src="./images/toy_11.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Mini-Spiderman Toy</h5>
+                      <p class="card-text shop-item-price">Rs 299.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class=" col filter-item all t-shirts">
+                  <div class="card h-100">
+                    <img src="./images/toy_12.png" class="card-img-top shop-item-image" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title shop-item-title">Desk Connecter</h5>
+                      <p class="card-text shop-item-price">Rs 399.00</p>
+                      <button type="button" style="width: 100%;" class="btn btn-warning mt-auto shop-item-button"><i class="fa-solid fa-cart-shopping " style="margin-right: 4%;"></i>Add To Cart</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="container content-section" id="shopping-cart">
+        <h3 style="text-decoration: underline; text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+        <table class="table table-hover table-cart">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody class="cart-items"></tbody>
+        </table>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price" style="text-align: right;">Rs 0.00</span>
+        </div>
+        <div class="btn-purchase" style="margin-top: 10%;">
+            <button type="button" class="btn btn-dark btn-purchase">
+                <i class="fa-solid fa-cart-shopping" style="margin-right: 6%;"></i>PURCHASE
+            </button>
+        </div>
+    </section>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- JavaScript for Shopping Cart and PDF Generation -->
+    <script>
+        // Shopping Cart Logic
+        if (document.readyState == 'loading') {
+            document.addEventListener('DOMContentLoaded', ready);
+        } else {
+            ready();
+        }
+
+        function ready() {
+            var removeCartItemButtons = document.getElementsByClassName('btn-danger');
+            for (var i = 0; i < removeCartItemButtons.length; i++) {
+                var button = removeCartItemButtons[i];
+                button.addEventListener('click', removeCartItem);
+            }
+
+            var quantityInputs = document.getElementsByClassName('cart-quantity-input');
+            for (var i = 0; i < quantityInputs.length; i++) {
+                var input = quantityInputs[i];
+                input.addEventListener('change', quantityChanged);
+            }
+
+            var addToCartButtons = document.getElementsByClassName('shop-item-button');
+            for (var i = 0; i < addToCartButtons.length; i++) {
+                var button = addToCartButtons[i];
+                button.addEventListener('click', addToCartClicked);
+            }
+
+            document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+        }
+
+        function purchaseClicked() {
+            alert('Thank you for your purchase!!!');
+            generatePDF();
+            var cartItems = document.getElementsByClassName('cart-items')[0];
+            while (cartItems.hasChildNodes()) {
+                cartItems.removeChild(cartItems.firstChild);
+            }
+            updateCartTotal();
+        }
+
+        function removeCartItem(event) {
+            var buttonClicked = event.target;
+            buttonClicked.parentElement.parentElement.remove();
+            updateCartTotal();
+        }
+
+        function quantityChanged(event) {
+            var input = event.target;
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updateCartTotal();
+        }
+
+        function addToCartClicked(event) {
+            var button = event.target;
+            var shopItem = button.parentElement.parentElement;
+            var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
+            var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
+            var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
+            addItemToCart(title, price, imageSrc);
+            updateCartTotal();
+        }
+
+        function addItemToCart(title, price, imageSrc) {
+            var cartRow = document.createElement('tr');
+            cartRow.classList.add('cart-row');
+            var cartItems = document.getElementsByClassName('cart-items')[0];
+            var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
+
+            for (var i = 0; i < cartItemNames.length; i++) {
+                if (cartItemNames[i].innerText == title) {
+                    alert('This item is already in the cart!');
+                    return;
+                }
+            }
+
+            var cartRowContents = `
+                <td class="cart-item cart-column">
+                    <img class="cart-item-image" src="${imageSrc}" width="50" height="50">
+                    <span class="cart-item-title">${title}</span>
+                </td>
+                <td class="cart-item cart-column">
+                    <span class="cart-price cart-column">${price}</span>
+                </td>
+                <td class="cart-item cart-column">
+                    <input class="cart-quantity-input" type="number" value="1" style="width: 50px">
+                    <button class="btn btn-danger" type="button">Remove</button>
+                </td>
+            `;
+
+            cartRow.innerHTML = cartRowContents;
+            cartItems.append(cartRow);
+            cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem);
+            cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged);
+        }
+
+        function updateCartTotal() {
+            var cartItemContainer = document.getElementsByClassName('cart-items')[0];
+            var cartRows = cartItemContainer.getElementsByClassName('cart-row');
+            var total = 0;
+
+            for (var i = 0; i < cartRows.length; i++) {
+                var cartRow = cartRows[i];
+                var priceElement = cartRow.getElementsByClassName('cart-price')[0];
+                var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
+                var price = parseFloat(priceElement.innerText.replace('Rs ', ''));
+                var quantity = quantityElement.value;
+                total += price * quantity;
+            }
+
+            total = Math.round(total * 100) / 100;
+            document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs ' + total.toFixed(2);
+        }
+
+        // PDF Generation Logic
+        function generatePDF() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(18);
+            doc.text("Shopping Cart", 10, 10);
+
+            const cartItems = document.querySelectorAll('.cart-row');
+            let yPos = 20;
+
+            cartItems.forEach((item, index) => {
+                const title = item.querySelector('.cart-item-title').innerText;
+                const price = item.querySelector('.cart-price').innerText;
+                const quantity = item.querySelector('.cart-quantity-input').value;
+
+                doc.setFontSize(12);
+                doc.text(`${index + 1}. ${title}`, 10, yPos);
+                doc.text(`Price: ${price}`, 10, yPos + 5);
+                doc.text(`Quantity: ${quantity}`, 10, yPos + 10);
+
+                yPos += 20;
+            });
+
+            const totalPrice = document.querySelector('.cart-total-price').innerText;
+            doc.setFontSize(14);
+            doc.text(`Total: ${totalPrice}`, 10, yPos + 10);
+
+            doc.save('shopping_cart.pdf');
+        }
+    </script>
+</body>
+</html>
